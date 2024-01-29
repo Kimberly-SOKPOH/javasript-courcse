@@ -20,7 +20,7 @@ console.log(x, y);
 let statut="etudiant";
 let age=20;
 if(statut=="etudiant" || age===20) {
-    console.log("okkkkkkkkkkkkkkk")
+    console.log("okkkkkkkk")
 } else if (statut=="employe"){
     console.log("error")
 };
