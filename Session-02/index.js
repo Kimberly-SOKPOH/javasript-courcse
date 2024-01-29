@@ -30,6 +30,6 @@ if(statut=="etudiant" || age===20) {
 let valide=false;
 
 if(!valide){
-    console.log("okay")
+    console.log("d'accord")
 };
 console.log(valide);
