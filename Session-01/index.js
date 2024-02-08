@@ -30,6 +30,4 @@ function inscrire() {
     let nom = "AAAA";
     let prenom = "ali";
     let age = 19;
-
-    
 }
