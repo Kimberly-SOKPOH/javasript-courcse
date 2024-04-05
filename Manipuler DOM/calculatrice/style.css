@@ -1,0 +1,87 @@
+.data{
+    background-color: azure;
+    border: 1PX black solid;
+}
+td{
+    margin-left: 15PX ;
+}
+
+
+/* form.html */
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.formulaire{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border : solid 1px rgb(175, 170, 170);
+    border-radius: 6PX;
+    padding: 15PX 40PX 15PX 40PX;
+
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30PX;
+    flex-direction: column;
+}
+.recherche{
+    width: 300PX;
+    height: 50PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5PX 55PX 5PX 55PX;
+    border: solid 1PX rgb(175, 170, 170) ;
+    border-radius: 6PX;
+}
+img{
+    width: 20PX;
+    height: 20PX;
+}
+.recherche button{
+    height:40PX ;
+}
+.recherche input{
+    height:40PX ;
+    outline: none;
+    border-radius: 6px;
+}
+.recherche input :focus{
+    outline-color: aqua;
+}
+textarea{
+    margin-bottom: 30PX;
+}
+form button{
+    background-color: darkgreen;
+    color: white;
+    font-size: 15PX;
+    border: solid ;
+    border-radius: 6px;
+}
+.effacer{
+    background-color: darkgreen;
+    color: white;
+    font-size: 15PX;
+    border: solid ;
+    border-radius: 6px;
+}
+div input{
+   height: 20X;
+    border-radius: 6 px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+}
