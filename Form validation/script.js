@@ -3,7 +3,7 @@ let Arraygenre = []
 
 document.addEventListener("DOMContentLoaded", chargement)
 
-document.getElementById("submit").addEventListener("click", soumettre)
+document.getElementById("soumettre").addEventListener("click", validation)
 
 // function
 
@@ -13,7 +13,7 @@ function chargement(){
     request.onreadystatechange = function (){
         if (this.readyState == 4 && this.status == 200){
             let dataResponse = JSON.parse(this.responseText)
-            console.log(dataResponse)
+            // console.log(dataResponse)
             Arraygenre  =  dataResponse.genre
             let genreOptions = " ";
             for( let i = 0; i < Arraygenre.length; i++){
@@ -25,19 +25,19 @@ function chargement(){
     request.send()
 }
 
-function soumettre (e){
+function validation (e){
     e.preventDefault()
     let nom = document.getElementsById("nom_div"),
         email = document.getElementById("email"),
         password = document.getElementById("psw"),
         date = document.getElementById("date"),
-        errorMessage = ""
+        errorMessage = document.createElement("p");
+        errorMessage.style.color = "red";
+        console.log(errorMessage)
         if ( nom.value == ""){
-          let errorMessage = document.createElement("p");
-          errorMessage.style.color = "red"
-          errorMessage.innerHTML = " Entrez votre nom"
+          errorMessage.innerText = " Entrez votre nom"
           nom.append(errorMessage)
-          console.log(errorMessage)
+          
             
         }
         if ( email.value == ""){
